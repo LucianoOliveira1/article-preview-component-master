@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: hsl(0, 0%, 35%);
+    font-family: 'Manrope', sans-serif;
+}
+.container{
+    background-color: white;
+    width: 300px;
+    height: 500px;
+    margin: 100px auto;
+    border-radius: 15px;
+    overflow: hidden;
+
+    .img{
+        width: 100%;
+        height: 40%;
+        border-radius: 15px 15px 0px 0px;
+    }
+
+    .txt-area{
+        padding: 30px;
+        h1{
+            font-size: .9rem;
+            line-height: 20px;
+            margin-bottom: 15px;
+            color: hsl(217, 19%, 35%);
+        }
+        p{
+            font-size: .8rem;
+            line-height: 20px;
+            color: hsl(214, 17%, 51%);
+        }
+    }
+
+    .profile-area{
+        padding: 0 30px;
+        display: none;
+        flex-direction: row;
+        align-items: center;
+
+        .avatar{
+            width: 38px;
+            border-radius: 50%;
+            margin-right: 13px;
+        }
+        .profile-text{
+            margin-right: 30px;
+            h2{
+                font-size: .8rem;
+                color: hsl(217, 19%, 35%);
+            }
+            p{
+                font-size: .7rem;
+                color: hsl(212, 23%, 69%);
+            }
+        }
+        .share{
+            width: 24px;
+            height: 24px;
+            background-color: hsl(210, 46%, 95%);
+            padding: 5px;
+            border-radius: 50%;
+            object-fit: contain;
+        }   
+    }
+    .social-medias{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        background-color: hsl(217, 19%, 35%);
+        width: 100%;
+        height: 70px;
+        padding: 0 30px;
+
+        h2{
+            font-size: .7rem;
+            letter-spacing: 3px;
+            color: hsl(212, 23%, 69%);
+            font-weight: 500;
+            margin-right: 15px;
+            margin-bottom: 5px;
+        }
+        .icons{
+            margin-right: 50px;
+            .icon{
+                width: 16px;
+                margin-right: 8px;
+            }
+        }
+        .share-icon{
+            width: 24px;
+            height: 24px;
+            background-color: hsl(212, 23%, 69%);
+            padding: 5px;
+            border-radius: 50%;
+            object-fit: contain;
+        }
+    }
+}
